@@ -5,13 +5,13 @@
 # Terminates upon entering "ZZZ". No input validation.
 studLName = ""
 while studLName != "ZZZ":
-    studLName = input("What is the student's last name? Type ZZZ to quit.")
+    studLName = input("What is the student's last name? Type ZZZ to quit.\n")
     if studLName == "ZZZ":
         print("Terminating input.")
         break
     else:
-        studFName = input("What is the student's first name?")
-        studGPA = float(input("What is the student's GPA? (written in this format: 0.00)"))
+        studFName = input("What is the student's first name?\n")
+        studGPA = float(input("What is the student's GPA? (written in this format: 0.00)\n"))
         if studGPA >= 3.5:
             print(studFName, studLName, "has made the Dean's List!" )
         elif studGPA >= 3.25:
